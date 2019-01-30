@@ -15,12 +15,32 @@ export class AppComponent {
       url: '/home',
       icon: 'home'
     },
+    
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'competence',
+      url: '/competence',
+      icon: 'stats'
+    }, 
+    {
+    
+      title: 'portfolio',
+      url: '/portfolio',
+      icon: 'logo-ionitron'
+    },
+
+    {
+      title: 'blog',
+      url: '/blog',
+      icon: 'photos'
+    },
+   
+    {
+      title: 'contact',
+      url: '/contact',
+      icon: 'contact'
     }
   ];
+  
 
   constructor(
     private platform: Platform,

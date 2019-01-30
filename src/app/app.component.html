@@ -7,6 +7,35 @@
         </ion-toolbar>
       </ion-header>
       <ion-content>
+          <style>#div-avatar {
+              display: inline-block;
+              width: 180px;
+              height: 180px;
+              border-radius: 50%;
+              overflow: hidden;
+          }
+            
+            #img1 {
+              width: inherit;
+              height: inherit;
+              border-radius: inherit;
+            }
+            
+            /*aspect-ratio pour intgrer l'image dans le div*/ 
+            
+            #img1  {
+              object-fit: cover;
+              object-position: right center;
+            }
+          </style>
+         
+          <div id="div-avatar" style="margin-left:24px">
+
+              <img id="img1" width="150" src="../assets/imgs/bs.jpg">
+        
+            </div>
+        
+            <span style="font-size:110%;padding-left:30%" >Babacar sylla</span> 
         <ion-list>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
             <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">

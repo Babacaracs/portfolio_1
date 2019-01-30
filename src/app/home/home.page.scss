@@ -2,3 +2,45 @@
   max-height: 35vh;
   overflow: hidden;
 }
+#div-avatar {
+  display: inline-block;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px 15px rgba(41, 44, 45, 0.75);
+-webkit-box-shadow: 3px 3px 10px 15px rgba(41, 44, 45, 0.75);
+-moz-box-shadow: 3px 3px 10px 15px rgba(41, 44, 45, 0.75);
+}
+
+
+
+#img1 {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+
+/*aspect-ratio pour intgrer l'image dans le div*/ 
+
+#img1  {
+  object-fit: cover;
+  object-position: right center;
+  transform: rotate(-90deg);
+}
+
+
+#div-avatar:hover {
+   
+    transform: rotate(360deg);
+    transition-duration: 4s;
+  
+
+
+}
+.para
+{
+  color: white;
+}
+
+
